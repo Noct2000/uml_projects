@@ -1,6 +1,6 @@
 format 224
 "uml1"
-  revision 4
+  revision 5
   modified_by 2 "olegk"
 
 
@@ -66,7 +66,7 @@ format 224
      end
     classdiagram 128002 "ClassDiagram1"
       classdiagramsettings member_max_width 0 end
-      size A4
+      size A-Landscape
     end
 
     class 128002 "BaseData"
@@ -250,6 +250,7 @@ ${inlines}
 	
 	
       end
+
     end
 
     class 128258 "DoubleData"
@@ -552,6 +553,15 @@ ${inlines}
 	
 	
       end
+
+      classrelation 141570 // <directional aggregation>
+	relation 141570 o-->
+	  a role_name "" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 141570 // <directional aggregation>
+	  b parent class_ref 128002 // BaseData
+      end
     end
 
     class 135170 "DoubleDataArray"
@@ -668,6 +678,15 @@ ${inlines}
 	
 	
 	
+      end
+
+      classrelation 141698 // <directional aggregation>
+	relation 141698 o-->
+	  a role_name "" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 141698 // <directional aggregation>
+	  b parent class_ref 128002 // BaseData
       end
     end
   end

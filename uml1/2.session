@@ -2,21 +2,20 @@ window_sizes 1600 837 375 1220 687 104
 
 diagrams
   active  classdiagram_ref 128002 // ClassDiagram1
-    902 549 116 A4 336 0
+    902 549 112 A-Landscape 49 235
 end
 show_stereotypes
-selected operation_ref 138242 // getSize
 open
   class_ref 128002 // BaseData
   class_ref 128130 // IntData
   class_ref 128258 // DoubleData
   class_ref 134914 // BaseDataArray
+  attribute_ref 134914 // size
   operation_ref 137474 // IntDataArray
   operation_ref 137602 // ~IntDataArray
   operation_ref 137730 // DoubleDataArray
   operation_ref 137858 // ~DoubleDataArray
   operation_ref 137218 // setArray
-  operation_ref 137346 // getArray
 end
 end
 verbose
